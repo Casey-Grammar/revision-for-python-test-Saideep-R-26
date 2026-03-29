@@ -7,7 +7,12 @@
 
 def main():
     #Write your code here
-    
+    timeneeded = int(input('Time needed to launch: '))
+    print('Counting down ...')
+    for i in range(timeneeded, 0, -1):
+      print(f'{i} ...')
+    print('Blast off!')
+
 
     
     # End of your code here
