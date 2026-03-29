@@ -5,7 +5,12 @@
 
 def main():
     #Write your code here
-    
+    findbear = input('Message: ')
+    if 'bear' in findbear:
+        print("There's a bear in there.")
+    else:
+        print("No bears here.")
+        
         
     
     # End of your code here

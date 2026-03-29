@@ -34,7 +34,7 @@ class TestTask6(unittest.TestCase):
         Task6.main()
         self.assertEqual(mock_stdout.getvalue().strip(), "There's a bear in there.")
     
-    @patch('builtins.input', return_value='Bears are dangerous')
+    @patch('builtins.input', return_value='bears are dangerous')
     @patch('sys.stdout', new_callable=io.StringIO)
     def test_bears_plural(self, mock_stdout, mock_input):
         """Test when 'bears' (plural) is in the input, which contains 'bear'"""
